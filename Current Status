@@ -1,3 +1,18 @@
+08/02/19
+MOTOR SUBSYSTEM: Driver has arrived, motor will arrive soon/
+RADIO SUBSYSTEM: Completed.
+POWER SUBSYSTEM: Pending completion.
+ARDUINO SUBSYSTEM: Hardware complete, code pending completion.
+3D PRINTING: Pending completion.
+PCB: Pending completion.
+
+GOALS: 
+  3D print a pulley and test the motor.
+  External flyback diode on motor and fuses.
+  Calculate total current required across each subsystem.
+
+************************************************************************************************************************************
+
 31/01/19
 MOTOR SUBSYSTEM: En route.
 RADIO SUBSYSTEM: Completed.
