@@ -1,5 +1,5 @@
 08/02/19
-MOTOR SUBSYSTEM: Driver has arrived, motor will arrive soon/
+MOTOR SUBSYSTEM: Driver has arrived, motor will arrive soon.
 RADIO SUBSYSTEM: Completed.
 POWER SUBSYSTEM: Pending completion.
 ARDUINO SUBSYSTEM: Hardware complete, code pending completion.
@@ -10,6 +10,25 @@ GOALS:
   3D print a pulley and test the motor.
   External flyback diode on motor and fuses.
   Calculate total current required across each subsystem.
+  With a constant load of 1A a 720mΩ resistor is required to drop the voltage such that the driver only works with 11v
+  N.B. this is calculated using the 280mΩ resistance of the transistors of the driver itself (it would be suitable to use
+  a potentiometer between 0 and 1000mΩ.
+  
+CHALLENGES:
+  Can't calculate current until testing of motor is complete.
+  Can't implement solenoid until testing is complete which also prevents calculation of total current.
+  - Solved for knowing position of monkey (refer to notes) -
+  
+NOTES:
+  Using a push button an attachment to the line supporting the monkey will be activated when the monkey is winched up
+  completely and will then swap the motor direction at the same speed. The monkey will go all the way down and then back
+  up which will trigger the push button again. The arduino can track the time between button pushes via interrupts thus
+  allowing it to calculate the distance as it knows the speed. This allows the arduino to know where the "bottom" of the
+  monkey's range of motion is thus allowing the user to use any length of line and still accurately stop at the bottom
+  when given the command.
+  
+  The following link is to a slug lock-solenoid that would be suitable for the locking mechanism at power off.
+  https://www.adafruit.com/product/1512
 
 ************************************************************************************************************************************
 
