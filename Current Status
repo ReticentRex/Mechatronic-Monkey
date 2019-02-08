@@ -29,6 +29,15 @@ NOTES:
   
   The following link is to a slug lock-solenoid that would be suitable for the locking mechanism at power off.
   https://www.adafruit.com/product/1512
+  
+  The following link is to the design of the circuit which also includes code.
+  https://www.circuito.io/app?components=9442,11113,305155,848753,7654322
+  
+THOUGHTS:
+  The IR gateway can double as a range finder (depending on its maximum reliable range) which can increase the accuracy
+  the arduino can calculate the distance to the bottom by. The rotational encoder is an unnecessary complexity. More
+  research into how to use the driver and all of its functionality is required i.e. braking, sleeping etc. Maybe a bigger
+  power supply will be required due to only 1.5A of current being available, not everything may be fully powered.
 
 ************************************************************************************************************************************
 
