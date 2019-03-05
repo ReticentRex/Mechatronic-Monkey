@@ -68,3 +68,37 @@ NOTES:
 THOUGHTS: 
   Maybe a rotational encoder would be beneficial to track the speed of the motor. An IR gateway as a failsafe to the
   mechanical trigger could be important too.
+
+***********************************************************************************************************************************
+
+05/03/19
+MOTOR SUBSYSTEM: Arrived, modelling in progress.
+RADIO SUBSYSTEM: Completeted.
+POWER SUBSYSTEM: A new motor driver is en route which may require a higher amperage transformer.
+ARDUINO SUBSYSTEM: Hardware complete, coding, modelling and testing to follow.
+3D PRINTING: Test pulley in progress, case to be completed.
+PCB: Pending completion.
+
+GOALS:
+  Model the motor's no load speed, stall current and total power consumption. (Optionally model noise and temperature).
+  Get motor running with current driver and power the arduino and motor from the transformer.
+  Complete electrical circuit analysis and incorporate external flybacks (if required).
+  
+CHALLENGES:
+  Motor modelling must be completed before electrical circuit analysis can be carried out.
+  Solenoid needs to be modelled to assist in the electrical circuit analysis, as well as determining if more power is required.
+  Position finding with timing between triggers needs to be tested as well as edge tested.
+  
+NOTES:
+  Fuses need to be accounted for in the electrical analysis. Speak with the electrician in regards to whether a fuse should be in
+  place before any electronics or if before the motor is enough.
+  
+  Need to research flyback diodes and check if the driver already has them.
+  
+THOUGHTS:
+  A solenoid might fail edge testing thus needs to be carefully modelled and should lose power before the motor.
+  Concealing the entire system in a plastic bunch of bananas with non-flammable insulation between the case and the bananas that
+  can act as a noise dampener would be a nice touch.
+  Finally, temperature modelling the components inside the case, as well as flame/auto ignition testing the 3D printed case would
+  be a huge bonus as being a very safe system in the event of an edge case failure.
+  
