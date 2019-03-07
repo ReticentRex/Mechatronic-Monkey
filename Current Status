@@ -102,3 +102,12 @@ THOUGHTS:
   Finally, temperature modelling the components inside the case, as well as flame/auto ignition testing the 3D printed case would
   be a huge bonus as being a very safe system in the event of an edge case failure.
   
+**************************************************************************************************************************************
+  
+08/03/19
+MOTOR SUBSYSTEM: Driver testing completed, motor I - T curve pending completion
+RADIO SUBSYSTEM: Completeted.
+POWER SUBSYSTEM: Completed, but a bigger transformer may be required for futre upgrades.
+ARDUINO SUBSYSTEM: Hardware complete, coding underway.
+3D PRINTING: Test pulley in progress, case to be completed.
+PCB: Pending completion.
