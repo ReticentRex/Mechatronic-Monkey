@@ -111,3 +111,28 @@ POWER SUBSYSTEM: Completed, but a bigger transformer may be required for futre u
 ARDUINO SUBSYSTEM: Hardware complete, coding underway.
 3D PRINTING: Test pulley in progress, case to be completed.
 PCB: Pending completion.
+
+GOALS:
+  Test the motor driver to see if it can power the Arduino.
+  Research higher power transformers for future upgrades.
+  Model the I-T curve of the motor.
+  
+CHALLENGES:
+  ^^
+  Determine whether or not a solenoid is required by observing the motor coasting under load.
+  Push button testing and debounce modelling needs to begin to safely and reliably control the motor.
+  
+NOTES:
+  The small driver has inbuilt back-emf suppression but the larger driver may not.
+  
+THOUGHTS:
+  The outputs for the motor of the larger driver could potentially supply multiple medium-sized motors thus negating the need for
+  multiple drivers. This has a limitation of all motors being in sync so the only way to offset each monkey/spider is to have varying
+  lengths of line from each motor to each respective monkey/spider.
+  
+  The push button may be bouncy and might not always trigger effectively. This demands a rigorous design for how the push button 
+  interacts with the monkey as well as either an RC debounce circuit or interrupt rising/falling edge code.
+  
+  Finally, the time between each button press gives the Arduino the total time of each cycle but if the monkey is interferred with or
+  the power to the motor unexpectedly drops temporarily this time measurement will become invalid. As such the Arduino should store
+  the previous 10 cycle times and average that then compare the average with the newest time.
