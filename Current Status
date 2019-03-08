@@ -136,3 +136,7 @@ THOUGHTS:
   Finally, the time between each button press gives the Arduino the total time of each cycle but if the monkey is interferred with or
   the power to the motor unexpectedly drops temporarily this time measurement will become invalid. As such the Arduino should store
   the previous 10 cycle times and average that then compare the average with the newest time.
+
+  Using a pulley will linearly increase torque with winding width but a worm gear will maintain a constant torque. With a pulley the
+  monkey will slow down as it reaches the apex of it's motion making it seem like the monkey nearly reached the bananas but then got too
+  tired and rapidly falls back down.
