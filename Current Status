@@ -1,3 +1,33 @@
+31/01/19
+MOTOR SUBSYSTEM: En route.
+RADIO SUBSYSTEM: Completed.
+POWER SUBSYSTEM: Pending completion.
+ARDUINO SUBSYSTEM: Hardware complete, code pending completion.
+3D PRINTING: Pending completion.
+PCB: Pending completion.
+
+GOALS: 
+  3D print a pulley and test the motor.
+  Put in electrical safety components such as 11V regulator for motor driver, external flyback diode on motor and fuses.
+  Calculate total current required across each subsystem.
+  
+CHALLENGES:
+  Can't calculate current until testing of motor is complete.
+  Can't implement solenoid until testing is complete which also prevents calculation of total current.
+  Need to solve for how the arduino will know where the monkey is at any one time.
+  
+NOTES:
+  Best idea for 3rd challenge is to have a mechanical stop that the monkey triggers at which point the motor changes direction
+  and continues to hoist the monkey until it is tripped again i.e. the pulley fully coils around twice.
+  
+  Website for designing a circuit with arduino: https://www.circuito.io/app?components=512,11021
+  
+THOUGHTS: 
+  Maybe a rotational encoder would be beneficial to track the speed of the motor. An IR gateway as a failsafe to the
+  mechanical trigger could be important too.
+
+***********************************************************************************************************************************
+
 08/02/19
 MOTOR SUBSYSTEM: Driver has arrived, motor will arrive soon.
 RADIO SUBSYSTEM: Completed.
@@ -40,36 +70,6 @@ THOUGHTS:
   power supply will be required due to only 1.5A of current being available, not everything may be fully powered.
 
 ************************************************************************************************************************************
-
-31/01/19
-MOTOR SUBSYSTEM: En route.
-RADIO SUBSYSTEM: Completed.
-POWER SUBSYSTEM: Pending completion.
-ARDUINO SUBSYSTEM: Hardware complete, code pending completion.
-3D PRINTING: Pending completion.
-PCB: Pending completion.
-
-GOALS: 
-  3D print a pulley and test the motor.
-  Put in electrical safety components such as 11V regulator for motor driver, external flyback diode on motor and fuses.
-  Calculate total current required across each subsystem.
-  
-CHALLENGES:
-  Can't calculate current until testing of motor is complete.
-  Can't implement solenoid until testing is complete which also prevents calculation of total current.
-  Need to solve for how the arduino will know where the monkey is at any one time.
-  
-NOTES:
-  Best idea for 3rd challenge is to have a mechanical stop that the monkey triggers at which point the motor changes direction
-  and continues to hoist the monkey until it is tripped again i.e. the pulley fully coils around twice.
-  
-  Website for designing a circuit with arduino: https://www.circuito.io/app?components=512,11021
-  
-THOUGHTS: 
-  Maybe a rotational encoder would be beneficial to track the speed of the motor. An IR gateway as a failsafe to the
-  mechanical trigger could be important too.
-
-***********************************************************************************************************************************
 
 05/03/19
 MOTOR SUBSYSTEM: Arrived, modelling in progress.
