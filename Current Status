@@ -148,8 +148,9 @@ THOUGHTS:
 NOTES: 
   Nothing much has changed but a plastic bunch of bananas is on its way and for the Roomba idea, the bananas can make a protective
   shroud which can be designed to look like a thrown for a glove monkey to sit on. It can have a servo in its neck to make its
-  head look side to side and using the 360 degree camera a "Life in The Day of a Monkey at JG" can be made with the tiny planet
-  feature. Pretty novel, pretty easy.
+  head look side to side and using the 360 degree camera a "A Day in the Life of a Monkey King" can be made with the tiny planet
+  feature. Adding a speaker playing George of the Jungle drum theme would help to alert people it is approaching making it less of
+  a tripping hazard. Pretty novel, pretty easy.
   
 *****************************************************************************************************************************************
 10/03/18
@@ -158,3 +159,9 @@ NOTES:
   The transformer can't provide the needed current without hitting a safety switch so a bigger transformer is required. For now a 
   series of large batteries should cut it.
     
+*****************************************************************************************************************************************
+13/03/18
+
+NOTES:
+  A larger transformer works but the motor will need a thermistor to lock out current at a certain temperature. The pulley can work as
+  a complicated worm gear or an elegant wide pitch pulley as the fishing line tends to wrap in an orderly function on its own.
