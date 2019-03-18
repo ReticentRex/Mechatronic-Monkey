@@ -171,22 +171,31 @@ NOTES:
 18/03/19
 MOTOR SUBSYSTEM: Previous motor cannot output enough power, new motor en route.
 RADIO SUBSYSTEM: Completeted.
-POWER SUBSYSTEM: 
-ARDUINO SUBSYSTEM: Hardware complete, coding underway.
-3D PRINTING: Test pulley in progress, case to be completed.
+POWER SUBSYSTEM: New higher power transformer en route along with a current in rush limiter.
+ARDUINO SUBSYSTEM: 12V Regulator required to dissipate 24V power from supply.
+3D PRINTING: 3D printing on hold until new motor arrives.
 PCB: Pending completion.
 
 GOALS:
-  Test the motor driver to see if it can power the Arduino.
-  Research higher power transformers for future upgrades.
-  Model the I-T curve of the motor.
+  Connect the new power supply to the motor and model the motor.
+  Connect the new power supply to the 12v regulator and the arduino to test the temperature.
+  Connect the in rush current limiter and check current through the circuit as well as temperature.
   
 CHALLENGES:
-  ^^
-  Determine whether or not a solenoid is required by observing the motor coasting under load.
-  Push button testing and debounce modelling needs to begin to safely and reliably control the motor.
+  The output shaft is already 10mm so a constant radius of the coupler/pulley will be required to maintain a comfortable torque
+  buffer.
+  The system may require heat sinking, particularly the 12v regulator.
+  
   
 NOTES:
-  The small driver has inbuilt back-emf suppression but the larger driver may not.
+  A current sensing resistor may be required to help prevent stalling and thus temperature increasing in the motor.
   
 THOUGHTS:
+  A slower monkey is not a bad thing. It will reach up slowly for the bananas and then coast (pseudo freefall) and the motor can
+  slow it down right before the bottom of its arc.
+  Being a slower motor means that a lower duty cycle where the monkey is moving imperciptibly but by the end of half an hour it will
+  have moved considerably, adding a sense of magic to how the monkey moves.
+  Having two of these systems for both monkeys in the middle of the gym will add considerable value to the experience as well as
+  help contain parties by the kids remembering not to cross to the wrong side because the floating monkeys are there.
+  A spider rapelling from its web in the disco area would be very novel as well. There is potential to generate a number of
+  models that complement each other whilst seamlessly working in tandem off one remote.
