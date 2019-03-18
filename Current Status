@@ -107,7 +107,7 @@ THOUGHTS:
 08/03/19
 MOTOR SUBSYSTEM: Driver testing completed, motor I - T curve pending completion
 RADIO SUBSYSTEM: Completeted.
-POWER SUBSYSTEM: Completed, but a bigger transformer may be required for futre upgrades.
+POWER SUBSYSTEM: Completed, but a bigger transformer may be required for future upgrades.
 ARDUINO SUBSYSTEM: Hardware complete, coding underway.
 3D PRINTING: Test pulley in progress, case to be completed.
 PCB: Pending completion.
@@ -165,3 +165,28 @@ NOTES:
 NOTES:
   A larger transformer works but the motor will need a thermistor to lock out current at a certain temperature. The pulley can work as
   a complicated worm gear or an elegant wide pitch pulley as the fishing line tends to wrap in an orderly function on its own.
+
+**************************************************************************************************************************************
+  
+18/03/19
+MOTOR SUBSYSTEM: Previous motor cannot output enough power, new motor en route.
+RADIO SUBSYSTEM: Completeted.
+POWER SUBSYSTEM: 
+ARDUINO SUBSYSTEM: Hardware complete, coding underway.
+3D PRINTING: Test pulley in progress, case to be completed.
+PCB: Pending completion.
+
+GOALS:
+  Test the motor driver to see if it can power the Arduino.
+  Research higher power transformers for future upgrades.
+  Model the I-T curve of the motor.
+  
+CHALLENGES:
+  ^^
+  Determine whether or not a solenoid is required by observing the motor coasting under load.
+  Push button testing and debounce modelling needs to begin to safely and reliably control the motor.
+  
+NOTES:
+  The small driver has inbuilt back-emf suppression but the larger driver may not.
+  
+THOUGHTS:
