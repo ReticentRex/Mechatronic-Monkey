@@ -186,7 +186,6 @@ CHALLENGES:
   buffer.
   The system may require heat sinking, particularly the 12v regulator.
   
-  
 NOTES:
   A current sensing resistor may be required to help prevent stalling and thus temperature increasing in the motor.
   
@@ -198,4 +197,38 @@ THOUGHTS:
   Having two of these systems for both monkeys in the middle of the gym will add considerable value to the experience as well as
   help contain parties by the kids remembering not to cross to the wrong side because the floating monkeys are there.
   A spider rapelling from its web in the disco area would be very novel as well. There is potential to generate a number of
+  models that complement each other whilst seamlessly working in tandem off one remote.
+  
+**************************************************************************************************************************************
+  
+22/04/19
+MOTOR SUBSYSTEM: New motor arrived and works well.
+RADIO SUBSYSTEM: New toggle type receiver en route.
+POWER SUBSYSTEM: Completed. A reverse voltage protector is en route.
+ARDUINO SUBSYSTEM: Regulator arrived and a battery can be useful to keep the Arduino on.
+3D PRINTING: Will complete when PCB and props in place.
+PCB: Pending completion.
+
+GOALS:
+  Set up the admin mode to calibrate the bottom point of the arc.
+  Set up the code to make the monkey have a nice ramp speed at both peaks of the arc.
+  Set up the code to ramp the speed through 0 - 255 so that the user can select which speed they desire.
+  
+CHALLENGES:
+  Need aluminium output shaft and potentially heatsinks for the motor driver and the reverse voltage protector.
+  Need to accomodate for heatsinks in the 3D printed case.
+  Need to test the whole setup in the field.
+  
+NOTES:
+  The toggle type will be useful as the interrupts can detect changes thus the user can turn the motor on/off, cycle speed and select
+  the preferred speed, change direction and have a free button for another setting.
+  
+THOUGHTS:
+  The 9V battery will work for a short time but cannot output much current so a higher mAh battery will likely be required for keeping
+  the Arduino on.
+  As there is a free button maybe it can be used to initiate the admin mode for calibrating the arc, but also, when activated, altering
+  the effects of the other buttons to complete other tasks. The admin mode should be able to be turned off with the same pattern as
+  was used to turn it on or go to autonomous mode after 2 min of no input.
+  
+  This point is important for the business model of these projects: There is potential to generate a number of
   models that complement each other whilst seamlessly working in tandem off one remote.
