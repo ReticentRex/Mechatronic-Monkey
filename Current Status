@@ -204,7 +204,7 @@ THOUGHTS:
 22/04/19
 MOTOR SUBSYSTEM: New motor arrived and works well.
 RADIO SUBSYSTEM: New toggle type receiver en route.
-POWER SUBSYSTEM: Completed. A reverse voltage protector is en route.
+POWER SUBSYSTEM: A reverse voltage protector is en route.
 ARDUINO SUBSYSTEM: Regulator arrived and a battery can be useful to keep the Arduino on.
 3D PRINTING: Will complete when PCB and props in place.
 PCB: Pending completion.
@@ -232,3 +232,16 @@ THOUGHTS:
   
   This point is important for the business model of these projects: There is potential to generate a number of
   models that complement each other whilst seamlessly working in tandem off one remote.
+
+**************************************************************************************************************************************
+
+26/04/19
+MOTOR SUBSYSTEM: Completed.
+RADIO SUBSYSTEM: Working on code.
+POWER SUBSYSTEM: A reverse voltage protector is en route.
+ARDUINO SUBSYSTEM: Regulator arrived and a battery can be useful to keep the Arduino on.
+3D PRINTING: Will complete when PCB and props in place.
+PCB: Pending completion.
+
+NOTES:
+  Added the interrupt script for toggling the power i.e. setting PWM to 0 or to its normal state.
