@@ -245,3 +245,19 @@ PCB: Pending completion.
 
 NOTES:
   Added the interrupt script for toggling the power i.e. setting PWM to 0 or to its normal state.
+  
+**************************************************************************************************************************************
+
+23/06/19
+MOTOR SUBSYSTEM: Completed.
+RADIO SUBSYSTEM: Working on code.
+POWER SUBSYSTEM: Reverse voltage protector arrived.
+ARDUINO SUBSYSTEM: Regulator arrived and a battery can be useful to keep the Arduino on.
+3D PRINTING: Will complete when PCB and props in place.
+PCB: Pending completion.
+
+NOTES:
+  During calibration to find bottom of arc the motor should turn slowly to not overdraw current at the bottom or fall too quickly.
+  It might be worth capping the motor's PWM to 75% so that it can't free fall per se. The reason for this is that when the motor speed
+  changes from very fast to very fast in the opposite direction it draws a huge current.
+  Key printed and placed but not Loctite'd in place yet.
