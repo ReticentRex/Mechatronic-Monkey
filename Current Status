@@ -261,3 +261,11 @@ NOTES:
   It might be worth capping the motor's PWM to 75% so that it can't free fall per se. The reason for this is that when the motor speed
   changes from very fast to very fast in the opposite direction it draws a huge current.
   Key printed and placed but not Loctite'd in place yet.
+  
+**************************************************************************************************************************************
+31/07/19
+THE FIX FOR THE POWER SUPPLY DEPENDS ON THE TOTAL RESPONSE OF THE MOTOR! A sudden change of PWM duty cycle causes a spike in voltage
+which overloads the PSU if the PWM is already near 100%. The fix is to keep the PWM at a threshold point where even the largest
+spike has no effect.
+
+Will implement fix when new Arduino Unos arrive.
