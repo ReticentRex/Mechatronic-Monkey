@@ -269,3 +269,12 @@ which overloads the PSU if the PWM is already near 100%. The fix is to keep the 
 spike has no effect.
 
 Will implement fix when new Arduino Unos arrive.
+
+**************************************************************************************************************************************
+22/08/19
+FIX IMPLEMENTED. Max PWM set to 100/255 (40%). Now indicator LEDs are required to help the user operate the remote controller properly.
+The stall current at a low speed with 10kg load is low enough to not have a noticable effect on the motor's temperature, as such no 
+heatsinks are required from the motor's casing, however it would be wise to maintain an air gap between the mounting rig and the motor
+casing.
+
+
